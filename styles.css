@@ -59,13 +59,13 @@ body {
 
 .right-side {
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: auto;
 }
 
 .top {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   padding-left: 3rem;
   background-color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
@@ -154,8 +154,8 @@ body {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 2rem;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
 }
 
 .bottom-right {
@@ -167,4 +167,62 @@ body {
 .announcements {
   background-color: white;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.divider {
+  background: black;
+  width: 100%;
+  height: 1px;
+}
+
+.trending {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.trending-blocks {
+  display: flex;
+  align-items: center;
+}
+
+.trending-blocks img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.card-container {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem 1rem 3rem 1rem;
+  border-left: 6px solid orange;
+  border-radius: 10px;
+  gap: 3rem;
+}
+
+.card-icons {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-end;
+}
+
+.card-icons img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
